@@ -1,4 +1,4 @@
-# Mundo do Bloco — site sobre Minecraft
+# Mundo do Bloco: site sobre Minecraft
 
 ## Sobre
 Site feito como atividade da unidade curricular de Programação de Aplicativos para testar os conhecimentos de HTML.
