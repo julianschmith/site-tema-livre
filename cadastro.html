@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Formulário de inscrição para o campeonato de construção do servidor Mundo do Bloco.">
+  <title>Cadastro — Mundo do Bloco</title>
+</head>
+<body>
+  <a href="#conteudo">Pular para o conteúdo</a>
+  <header>
+    <p><strong>Mundo do Bloco</strong></p>
+    <p>Um site sobre Minecraft feito por quem joga Minecraft.</p>
+  </header>
+  <nav aria-label="Menu principal">
+    <ul>
+      <li><a href="index.html">Início</a></li>
+      <li><a href="sobre.html">Sobre</a></li>
+      <li><a href="dados.html">Dados</a></li>
+      <li><a href="cadastro.html" aria-current="page">Cadastro</a></li>
+      <li><a href="contato.html">Contato</a></li>
+    </ul>
+  </nav>
+
+  <main id="conteudo">
+
+    <h1>Inscrição no campeonato</h1>
+
+    <p>Preencha os dados abaixo para inscrever seu time no campeonato de construção.
+    Os campos marcados como obrigatórios precisam ser preenchidos para o envio funcionar.</p>
+
+    <form action="#" method="post">
+      <fieldset>
+        <legend>Dados do jogador:</legend>
+        <p>
+          <label for="nickname">Nickname no jogo (obrigatório)</label><br>
+          <input type="text" id="nickname" name="nickname" autocomplete="nickname" required>
+        </p>
+        <p>
+          <label for="email">E-mail (obrigatório)</label><br>
+          <input type="email" id="email" name="email" autocomplete="email" required>
+        </p>
+        <p>
+          <label for="telefone">Telefone com DDD</label><br>
+          <input type="tel" id="telefone" name="telefone" autocomplete="tel"
+                 title="Digite no formato: (99) 99999-9999">
+        </p>
+        <p>
+          <label for="nascimento">Data de nascimento (obrigatório)</label><br>
+          <input type="date" id="nascimento" name="nascimento"
+                 autocomplete="bday" required>
+        </p>
+      </fieldset>
+      <fieldset>
+        <legend>Dados do time</legend>
+        <p>Plataforma em que você joga (obrigatório):</p>
+        <p>
+          <input type="radio" id="java" name="plataforma" value="java" required>
+          <label for="java">Java</label>
+
+          <input type="radio" id="bedrock" name="plataforma" value="bedrock">
+          <label for="bedrock">Bedrock</label>
+
+          <input type="radio" id="console" name="plataforma" value="console">
+          <label for="console">Console</label>
+        </p>
+        <p>
+          <label for="horas">Horas jogadas por semana</label><br>
+          <input type="number" id="horas" name="horas" min="1" max="40" value="5">
+        </p>
+        <p>
+          <label for="contribuicao">Contribuição mensal para o servidor (R$)</label><br>
+          <input type="number" id="contribuicao" name="contribuicao"
+                 min="0" max="100" step="0.01" value="0.00">
+        </p>
+        <p>
+          <label for="versao">Versão do jogo</label><br>
+          <select id="versao" name="versao">
+            <option value="">Escolha uma versão</option>
+            <option value="1.20">1.20</option>
+            <option value="1.21">1.21</option>
+            <option value="bedrock-atual">Bedrock atual</option>
+          </select>
+        </p>
+      </fieldset>
+      <fieldset>
+        <legend>Preferências</legend>
+        <p>O que você costuma usar no jogo:</p>
+        <p>
+          <input type="checkbox" id="mods-construcao" name="extras" value="mods-construcao">
+          <label for="mods-construcao">Mods de construção</label>
+
+          <input type="checkbox" id="shaders" name="extras" value="shaders">
+          <label for="shaders">Shaders de luz</label>
+        </p>
+
+        <p>
+          <label for="descricao">Descreva sua construção (máximo 300 caracteres)</label><br>
+          <textarea id="descricao" name="descricao" rows="5" maxlength="300"></textarea>
+        </p>
+
+        <p>
+          <input type="checkbox" id="termos" name="termos" value="aceito" required>
+          <label for="termos">Aceito as regras do servidor (obrigatório)</label>
+        </p>
+      </fieldset>
+
+      <p>
+        <button type="submit">Enviar inscrição</button>
+        <button type="reset">Limpar formulário</button>
+      </p>
+
+    </form>
+
+  </main>
+
+  <footer>
+    <p>Todos os direitos reservados para Julian Gabriel.</p>
+  </footer>
+
+</body>
+</html>
