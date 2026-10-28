@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Tabela com pontos de vida, dano de ataque e ano de estreia dos principais mobs do Minecraft.">
+  <title>Dados — Mundo do Bloco</title>
+</head>
+<body>
+  <a href="#conteudo">Pular para o conteúdo</a>
+  <header>
+    <p><strong>Mundo do Bloco</strong></p>
+    <p>Um site sobre Minecraft feito por quem joga Minecraft.</p>
+  </header>
+
+  <nav aria-label="Menu principal">
+    <ul>
+      <li><a href="index.html">Início</a></li>
+      <li><a href="sobre.html">Sobre</a></li>
+      <li><a href="dados.html" aria-current="page">Dados</a></li>
+      <li><a href="cadastro.html">Cadastro</a></li>
+      <li><a href="contato.html">Contato</a></li>
+    </ul>
+  </nav>
+
+  <main id="conteudo">
+    <h1>Dados dos mobs</h1>
+    <section>
+      <h2>Pontos de vida e dano</h2>
+      <p>A tabela abaixo mostra sete mobs do jogo. Cada linha é um mob e cada coluna
+      é uma informação sobre ele. A primeira coluna traz o nome, a segunda diz se o
+      mob é hostil, neutro ou passivo, a terceira mostra quantos pontos de vida ele tem,
+      a quarta mostra quanto de dano ele causa por ataque e a última traz o ano em que
+      ele apareceu no jogo. Os valores de vida e dano foram conferidos na página de
+      cada mob na Minecraft Wiki, e o último bloco da tabela soma tudo.</p>
+
+      <table>
+        <caption>Mobs do Minecraft: categoria, pontos de vida, dano de ataque e ano de estreia</caption>
+        <thead>
+          <tr>
+            <th scope="col">Mob</th>
+            <th scope="col">Categoria</th>
+            <th scope="col">Pontos de vida</th>
+            <th scope="col">Dano de ataque</th>
+            <th scope="col">Estreia no jogo</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">Creeper</th>
+            <td>Hostil</td>
+            <td>20</td>
+            <td>49</td>
+            <td><time datetime="2009">2009</time></td>
+          </tr>
+          <tr>
+            <th scope="row">Zumbi</th>
+            <td>Hostil</td>
+            <td>20</td>
+            <td>3</td>
+            <td><time datetime="2009">2009</time></td>
+          </tr>
+          <tr>
+            <th scope="row">Esqueleto</th>
+            <td>Hostil</td>
+            <td>20</td>
+            <td>2</td>
+            <td><time datetime="2009">2009</time></td>
+          </tr>
+          <tr>
+            <th scope="row">Enderman</th>
+            <td>Neutro</td>
+            <td>40</td>
+            <td>7</td>
+            <td><time datetime="2011">2011</time></td>
+          </tr>
+          <tr>
+            <th scope="row">Porco</th>
+            <td>Passivo</td>
+            <td>10</td>
+            <td>0</td>
+            <td><time datetime="2009">2009</time></td>
+          </tr>
+          <tr>
+            <th scope="row">Aldeão</th>
+            <td>Passivo</td>
+            <td>20</td>
+            <td>0</td>
+            <td><time datetime="2012">2012</time></td>
+          </tr>
+          <tr>
+            <th scope="row">Galinha</th>
+            <td>Passivo</td>
+            <td>4</td>
+            <td>0</td>
+            <td><time datetime="2009">2009</time></td>
+          </tr>
+        </tbody>
+        <tfoot>
+          <tr>
+            <th scope="row">Total</th>
+            <td>7 mobs</td>
+            <td>134</td>
+            <td colspan="2">Dano somado: 61</td>
+          </tr>
+        </tfoot>
+      </table>
+    </section>
+    <section>
+      <h2>Como ler os números</h2>
+      <p>Se você nunca jogou, algumas colunas podem ser meio estranhas. O resumo é este:</p>
+      <dl>
+        <dt>Pontos de vida</dt>
+        <dd>É a vida do mob. Cada golpe de espada de diamante da 7 de dano, então um mob com 20 pontos precisa de 3 golpes.</dd>
+
+        <dt>Dano de ataque</dt>
+        <dd>Quanto o mob tira da sua vida por golpe. O valor 49 do Creeper é da explosão, que é o ataque mais forte da tabela.</dd>
+
+        <dt>Categoria</dt>
+        <dd>Hostil ataca sempre, neutro só ataca se for atacado e passivo nunca ataca.</dd>
+
+        <dt>Estreia</dt>
+        <dd>Ano em que o mob apareceu no jogo. Os três primeiros nasceram junto com as primeiras versões.</dd>
+      </dl>
+    </section>
+  </main>
+
+  <footer>
+    <p>Todos os direitos reservados para Julian Gabriel.</p>
+  </footer>
+
+</body>
+</html>
