@@ -20,5 +20,5 @@ Abra a pasta e abra o arquivo index.html no navegador
 Todas as imagens são capturas feitas por mim no jogo
 
 ## Validação
-As cinco páginas passam no HTML Checker sem erros
+As cinco páginas passam no HTML Checker sem erros  
 O Lighthouse de acessibilidade marcou entre 95-96 em todas as paginas
